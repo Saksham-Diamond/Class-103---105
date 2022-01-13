@@ -1,0 +1,9 @@
+#camera {
+    height: 250px;
+    width: 300px;
+    border: 4px solid black ;
+    background-color: black;
+}
+#body1 {
+    background-color: rgba(194, 255, 80, 0.815);
+}

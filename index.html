@@ -1,0 +1,33 @@
+<html>
+    <head>
+<title>Image Recognition</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body id="body1">
+        <center>
+            
+            <h1 class="btn btn-danger" >Image Recognition App</h1><br>
+            <label>This model is trained on following objects</label><br>
+            <h4>Paper | Bath gel | Cap | Handkerchif | Book | Bottle | Pen | Brush | Vicks bottle | Come</h4><br>
+<h3>Webcam view</h3><br>
+<div id="camera" ></div><br>
+<div id="result" ></div><br>
+<button id="img_c" class="btn btn-success" onclick="Capture()">Capture image</button><br><br>
+<button id="img_r" class="btn btn-warning" onclick="Recognize()">Recognize image</button>
+<span>
+    <p>object :</p>
+    <p id="object" ></p>
+</span><br>
+<span>
+    <p>Acurracy :</p>
+    <p id="acurracy" ></p>
+</span>
+        </center>
+        <script src="main.js" ></script>
+    </body>
+</html>
